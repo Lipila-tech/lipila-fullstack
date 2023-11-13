@@ -27,8 +27,8 @@ export default function ContactPage() {
             <section className="card text-center" id="contact">
                 <h2>Contact Us</h2>
                 <form onSubmit={handleSubmit}>
-                    <div className="form-group">
-                        <label htmlFor="name">Your Name</label>
+                    <div className="mb-3">
+                        <label htmlFor="name" className='form-label'>Your Name</label>
                         <input
                             type="text"
                             className="form-control"
@@ -39,7 +39,7 @@ export default function ContactPage() {
                             required
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="mb-3">
                         <label htmlFor="email">Your Email</label>
                         <input
                             type="email"
@@ -51,7 +51,7 @@ export default function ContactPage() {
                             required
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="mb-3">
                         <label htmlFor="message">Your Message</label>
                         <textarea
                             className="form-control"

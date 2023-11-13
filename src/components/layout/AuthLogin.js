@@ -67,20 +67,7 @@ const Nav = () => {
                                 </ul>
                             </li>
                         </ul>
-                        <ul className="navbar-nav d-flex">
-                            <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="login">
-                                    Login
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="registration">
-                                    Signup
-                                </Link>
-                            </li>
-
-                        </ul>
-                        {/* <form className="d-flex">
+                        <form className="d-flex">
                             <input
                                 className="form-control me-2"
                                 type="search"
@@ -90,7 +77,7 @@ const Nav = () => {
                             <button className="btn btn-outline-success" type="submit">
                                 Search
                             </button>
-                        </form> */}
+                        </form>
                     </div>
                 </div>
             </nav>
@@ -100,4 +87,4 @@ const Nav = () => {
     )
 }
 
-export default Nav;
+export default Nav;s

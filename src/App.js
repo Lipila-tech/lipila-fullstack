@@ -6,6 +6,9 @@ import ContactPage from './components/pages/info/ContactPage';
 import PaymentInfoPage from './components/pages/info/PaymentInfoPage';
 import LoanInfoPage from './components/pages/info/LoanInfoPage';
 import TermsPage from './components/pages/info/TermsPage';
+import LoginForm from './components/auth/Login';
+import RegistrationForm from './components/auth/Register';
+
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           <Route path="/paymentinfo" element={<PaymentInfoPage />} />
           <Route path="/loaninfo" element={<LoanInfoPage />} />
           <Route path="/terms" element={<TermsPage />} />
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/registration" element={<RegistrationForm />} />
+          {/* <Route path="/logout" element={<RegistrationForm />} /> */}
         </Route>
       </Routes>
     </Router>

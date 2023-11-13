@@ -4,7 +4,12 @@ body {
   background-color: rgba(3, 137, 206, 100);
 }
 
-img {
-  width: 900px;
-  height: 1000px;
+/* img {
+  width: 5000;
+  height: 300px;
+} */
+
+a:hover {
+  background-color: #689;
+  color: #474;
 }
