@@ -1,7 +1,12 @@
+import Carousel from "./Carousel";
+
+
 const Hero = () => {
     return (
-        <section className="hero">
-            <img src="../../public/logo512.png" alt="Lipila hero image" />
+        <section className="card text-center">
+            <Carousel/>
+            <img src="" alt="Lipila logo" />
+
             <div className="hero-text">
                 <h2>Lipila is the easiest way to pay school fees</h2>
                 <p>
