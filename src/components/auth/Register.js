@@ -10,7 +10,7 @@ const RegistrationForm = () => {
 
   return (
     <div className="RegistrationForm-form">
-      <h1>RegistrationForm</h1>
+      <h1>Sign up</h1>
       <Form onFinish={onFinish}>
         <Form.Item
           label="Name"

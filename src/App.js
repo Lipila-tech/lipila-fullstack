@@ -8,7 +8,9 @@ import LoanInfoPage from './components/pages/info/LoanInfoPage';
 import TermsPage from './components/pages/info/TermsPage';
 import LoginForm from './components/auth/Login';
 import RegistrationForm from './components/auth/Register';
-
+import Dashboard from './components/pages/parent/Dashboard';
+import NavAuth from './components/layout/NavAuth';
+import PaymentForm from './components/pages/parent/PaymentForm';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/registration" element={<RegistrationForm />} />
           {/* <Route path="/logout" element={<RegistrationForm />} /> */}
         </Route>
+        <Route path='payment' element={<PaymentForm />} />
+        <Route path='dashboard' element={<Dashboard />} />
       </Routes>
     </Router>
   );

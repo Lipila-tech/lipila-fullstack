@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 
-const Nav = () => {
+const NavAuth = () => {
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -22,16 +22,21 @@ const Nav = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="/">
-                                    Home
+                                <Link className="nav-link active" aria-current="page" to="/dashboard">
+                                    Dashboard
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/about"> About</Link>
+                                <Link className="nav-link" to="/loan"> Request Loan</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/contact">
-                                    Contact
+                                <Link className="nav-link" to="/grades">
+                                    Grade History
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/payment">
+                                    Make Payment
                                 </Link>
                             </li>
                             <li className="nav-item dropdown">
@@ -67,24 +72,19 @@ const Nav = () => {
                                 </ul>
                             </li>
                         </ul>
-                        <form className="d-flex">
-                            <input
-                                className="form-control me-2"
-                                type="search"
-                                placeholder="Search"
-                                aria-label="Search"
-                            />
-                            <button className="btn btn-outline-success" type="submit">
-                                Search
-                            </button>
-                        </form>
+                        <ul className="navbar-nav d-flex">
+                            <li className="nav-item">
+                                <Link className="nav-link active" aria-current="page" to="/">
+                                    Logout
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
             <Outlet />
         </>
-
     )
 }
 
-export default Nav;s
+export default NavAuth;
