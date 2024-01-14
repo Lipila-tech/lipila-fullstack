@@ -13,57 +13,63 @@ export default function ContactPage() {
             email,
             message,
         };
-
-        console.log('Contact form submitted:', data);
-
         // Send data to your server or perform other actions here
     };
     return (
-        <div className='container'>
-            <section className="card text-center" id="contact">
-                <h2>Contact Us</h2>
-                <form onSubmit={handleSubmit}>
-                    <div className="mb-3">
-                        <label htmlFor="name" className='form-label'>Your Name</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            id="name"
-                            placeholder="Enter your name"
-                            value={name}
-                            onChange={(event) => setName(event.target.value)}
-                            required
-                        />
+        <div className='main'>
+            <div className='container p-3'>
+                <div className="card px-4">
+                    <p className='h8 py-3'>Contact Us</p>
+                    <div className='row gx-3'>
+                        <div className='col-12'>
+                            <div className="d-flex flex-column">
+                                <label htmlFor="name" className='form-label'>Your Name</label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="name"
+                                    placeholder="Ex: John Doe"
+                                    value={name}
+                                    onChange={(event) => setName(event.target.value)}
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div className='col-12'>
+                            <div className="d-flex flex-column">
+                                <label htmlFor="email">Your Email</label>
+                                <input
+                                    type="email"
+                                    className="form-control"
+                                    id="email"
+                                    placeholder="Ex: example@email.com"
+                                    value={email}
+                                    onChange={(event) => setEmail(event.target.value)}
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div className='col-12'>
+                            <div className="d-flex flex-column">
+                                <label htmlFor="message">Your Message</label>
+                                <textarea
+                                    className="form-control"
+                                    id="description"
+                                    rows="5"
+                                    placeholder="Ex: Example message"
+                                    value={message}
+                                    onChange={(event) => setMessage(event.target.value)}
+                                    required
+        
+                                />
+                            </div>
+                        </div>
                     </div>
-                    <div className="mb-3">
-                        <label htmlFor="email">Your Email</label>
-                        <input
-                            type="email"
-                            className="form-control"
-                            id="email"
-                            placeholder="Enter your email"
-                            value={email}
-                            onChange={(event) => setEmail(event.target.value)}
-                            required
-                        />
+                    <div className='col-12'>
+                        <button type="submit" className="btn btn-primary mb-2">Send</button>
                     </div>
-                    <div className="mb-3">
-                        <label htmlFor="message">Your Message</label>
-                        <textarea
-                            className="form-control"
-                            id="message"
-                            rows="5"
-                            placeholder="Enter your message"
-                            value={message}
-                            onChange={(event) => setMessage(event.target.value)}
-                            required
-                        />
-                    </div>
-                    <button type="submit" className="btn btn-primary">
-                        Send Message
-                    </button>
-                </form>
-            </section>
+                </div>
+            </div>
         </div>
     )
 }

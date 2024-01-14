@@ -8,7 +8,9 @@ const PaymentButton = () => {
   };
 
   return (
-    <button className="btn btn-primary" onClick={handleFormOpen}>LipilaPay</button>
+    <div className=''>
+      <button className="btn btn-primary" onClick={handleFormOpen}>LipilaPay</button>
+    </div>
   );
 };
 

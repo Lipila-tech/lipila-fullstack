@@ -1,13 +1,15 @@
-const Confirmation = ({paymentData}) => {
+const Confirmation = ({ paymentData }) => {
     return (
-        <section className="text-center">
-            <h3>Confirm payment</h3>
-            <p>Send: {paymentData.amount} ZMW</p>
-            <p>To: {paymentData.receiverAccountNumber}</p>
-            <p>From account: {paymentData.payerAccountNumber}</p>
-            <p>You will get a prompt to confirm on your phone</p>
-        </section>
-
+        <div className="">
+            <p className="h8 py-3">Confirm payment</p>
+            <div className="confirm-info">
+                <p><strong>Send</strong>: {paymentData.amount} ZMW</p>
+                <p><strong>To</strong>: {paymentData.receiverAccountNumber}</p>
+                <p><strong>From</strong>: {paymentData.senderAccountNumber}</p>
+            </div>
+            <br />
+            <p className="warning">Click Submit to confirm on your phone</p>
+        </div>
     )
 }
 

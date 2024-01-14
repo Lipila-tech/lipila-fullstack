@@ -6,7 +6,7 @@ import Confirmation from './Confirmation';
 const PaymentForm = ({ onSubmit }) => {
   const [formData, setFormData] = useState({
     amount: '',
-    payerAccountNumber: '',
+    senderAccountNumber: '',
     receiverAccountNumber: '',
     description: '',
   });
@@ -39,9 +39,9 @@ const PaymentForm = ({ onSubmit }) => {
         <InformationEntryFields formData={formData} handleChange={handleChange} onNext={onNext}/>
       )}
       {currentStep === 2 && (
-        <div>
+        <div className=''>
           <Confirmation paymentData={formData}/>
-          <button className='btn btn-primary' type="button" onClick={handleBack}>Back</button>
+          <button className='btn btn-primary' type="button" onClick={handleBack}>Back</button><br/>
           <button className='btn btn-primary' type="submit">Submit Payment</button>
         </div>
       )}

@@ -17,11 +17,15 @@ const ParentComponent = () => {
   };
 
   return (
-    <div>
-      {/* <PaymentButton onClick={() => setIsFormVisible(true)} /> */}
-      {isFormVisible && (
-        <PaymentForm onSubmit={handleSubmit} />
-      )}
+    <div className='main'>
+      <div className='container p-3'>
+        <div className='card px-4'>
+          {/* <PaymentButton onClick={() => setIsFormVisible(true)} /> */}
+          {isFormVisible && (
+            <PaymentForm onSubmit={handleSubmit} />
+          )}
+        </div>
+      </div>
     </div>
   );
 };

@@ -2,60 +2,72 @@ import React from 'react';
 
 const InformationEntryFields = ({ formData, handleChange, onNext }) => {
     return (
-        <div className="container h-100">
-            <div className="row h-100 justify-content-center align-items-center">
-                <div className="col-10 col-md-8 col-lg-6">
-                    <h6>Send Money in 3 easy Steps</h6>
-                    <div className='form-group'>
-                        <label className='sr-only' htmlFor="amount">Amount:</label>
+        <div className="">
+            <p className="h8 py-3">Payment Details</p>
+            <div className="row gx-3">
+                <div className='col-12'>
+                    <div className='d-flex flex-column'>
+                        <label className='text mb-1' htmlFor="amount">Amount:</label>
                         <input
-                            className='form-control'
+                            className='form-control mb-3'
                             type="number"
                             id="amount"
                             name="amount"
                             value={formData.amount}
                             onChange={handleChange}
                             required
+                            placeholder='Ex: 100'
                         />
                     </div>
-                    <div className='form-group'>
-                        <label className='sr-only' htmlFor="payerAccountNumber">Payer Account Number:</label>
+                </div>
+                <div className="col-12">
+                    <div className='d-flex flex-column'>
+                        <label className='text mb-1' htmlFor="senderAccountNumber">Sender Account Number:</label>
                         <input
-                            className='form-control'
+                            className='form-control mb-3'
                             type="text"
-                            id="payerAccountNumber"
-                            name="payerAccountNumber"
-                            value={formData.payerAccountNumber}
+                            id="senderAccountNumber"
+                            name="senderAccountNumber"
+                            value={formData.senderAccountNumber}
                             onChange={handleChange}
                             required
+                            placeholder='Ex: 0969445566'
                         />
                     </div>
-                    <div className='form-group'>
-                        <label className='sr-only' htmlFor="receiverAccountNumber">Receiver Account Number:</label>
+                </div>
+                <div className="col-12">
+                    <div className='d-flex flex-column'>
+                        <label className='text mb-1' htmlFor="receiverAccountNumber">Receiver Account Number:</label>
                         <input
-                            className='form-control'
+                            className='form-control mb-3'
                             type="text"
                             id="receiverAccountNumber"
                             name="receiverAccountNumber"
                             value={formData.receiverAccountNumber}
                             onChange={handleChange}
                             required
+                            placeholder='Ex: 0966443377'
                         />
                     </div>
-                    <div className='form-group'>
-                        <label className='sr-only' htmlFor="description">Description:</label>
-                        <input
-                            className='form-control'
+                </div>
+                <div className="col-12">
+                    <div className='d-flex flex-column'>
+                        <label className='text mb-1' htmlFor="description">Description:</label>
+                        <textarea
+                            className='form-control mb-3'
                             type="text"
                             id="description"
                             name="description"
                             value={formData.description}
                             onChange={handleChange}
+                            placeholder='Ex: Payment for the laptop...'
                         />
                     </div>
-                    <button type="submit" className="btn btn-primary mb-2" onClick={onNext}>Next</button>
-
                 </div>
+                <div className='col-12'>
+                    <button type="submit" className="btn btn-primary mb-2" onClick={onNext}>Next</button>
+                </div>
+
             </div>
         </div>
     );
