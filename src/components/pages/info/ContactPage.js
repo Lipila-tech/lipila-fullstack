@@ -1,8 +1,4 @@
 import React from 'react';
-import Testimonials from '../../layout/Testimonials';
-import CTA from '../../layout/CTA';
-import Footer from '../../layout/Footer';
-
 
 export default function ContactPage() {
     const [name, setName] = React.useState('');
@@ -68,7 +64,6 @@ export default function ContactPage() {
                     </button>
                 </form>
             </section>
-            <Footer />
         </div>
     )
 }

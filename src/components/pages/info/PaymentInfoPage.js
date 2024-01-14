@@ -1,7 +1,3 @@
-import CTA from '../../layout/CTA';
-import Footer from '../../layout/Footer';
-
-
 const PaymentInfoPage = () => {
     return (
         <div className='container'>
@@ -36,8 +32,6 @@ const PaymentInfoPage = () => {
                     <li>Review the payment details and click on "Pay".</li>
                 </ol>
             </div>
-            <CTA />
-            <Footer />
         </div>
     );
 };
