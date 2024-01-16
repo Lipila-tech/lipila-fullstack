@@ -28,7 +28,6 @@ const PaymentForm = ({ onSubmit }) => {
   };
 
   const onNext = () => {
-    console.log(formData)
     setCurrentStep(2);
   };
 

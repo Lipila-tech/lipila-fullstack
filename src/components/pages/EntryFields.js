@@ -53,7 +53,7 @@ const InformationEntryFields = ({ formData, handleChange, onNext }) => {
                 <div className="col-12">
                     <div className='d-flex flex-column'>
                         <label className='text mb-1' htmlFor="description">Description:</label>
-                        <textarea
+                        <input
                             className='form-control mb-3'
                             type="text"
                             id="description"
