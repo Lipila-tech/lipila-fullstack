@@ -7,6 +7,7 @@ import PaymentInfoPage from './components/pages/info/PaymentInfoPage';
 import ParentComponent from './components/pages/ParentComponent';
 import PaymentButton from './components/pages/PaymentButton';
 import Popup from './components/pages/PopUpComponent';
+import PersonList from './components/TestAxios';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route path="/" element={<Nav />}>
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/" element={<ParentComponent />} /> 
+          <Route path="/" element={<ParentComponent />} />
+          <Route path="/lipila" element={<PersonList/>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
