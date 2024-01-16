@@ -1,18 +1,15 @@
 {
   "files": {
     "main.css": "/lipila-ui/static/css/main.0a252ef4.css",
-    "main.js": "/lipila-ui/static/js/main.0dc120ff.js",
+    "main.js": "/lipila-ui/static/js/main.518ef60d.js",
     "static/js/787.80be1687.chunk.js": "/lipila-ui/static/js/787.80be1687.chunk.js",
-    "static/media/int.jpg": "/lipila-ui/static/media/int.cf189c63e0efc441e65b.jpg",
-    "static/media/mobile.jpg": "/lipila-ui/static/media/mobile.83cae9d4ab05465c63cd.jpg",
-    "static/media/pay.jpg": "/lipila-ui/static/media/pay.8cf773be328138a2d9e0.jpg",
     "index.html": "/lipila-ui/index.html",
     "main.0a252ef4.css.map": "/lipila-ui/static/css/main.0a252ef4.css.map",
-    "main.0dc120ff.js.map": "/lipila-ui/static/js/main.0dc120ff.js.map",
+    "main.518ef60d.js.map": "/lipila-ui/static/js/main.518ef60d.js.map",
     "787.80be1687.chunk.js.map": "/lipila-ui/static/js/787.80be1687.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a252ef4.css",
-    "static/js/main.0dc120ff.js"
+    "static/js/main.518ef60d.js"
   ]
 }
