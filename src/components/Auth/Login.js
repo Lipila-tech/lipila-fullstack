@@ -51,7 +51,7 @@ const Login = ({ setToken }) => {
                         </div>
                         <div className='col-12'>
                             <div className="d-flex flex-column">
-                                <label htmlFor="passwor">Password</label>
+                                <label htmlFor="password">Password</label>
                                 <input
                                     type='password'
                                     className="form-control"

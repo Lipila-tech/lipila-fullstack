@@ -12,10 +12,11 @@ import ParentComponent from './components/Payment/ParentComponent';
 import Products from "./components/Products/Products";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Preferences from "./components/Preferences/Preferences";
-
+import useToken from "./components/App/useToken";
 
 function App() {
-  const [token, setToken] = React.useState();
+  const { token, setToken } = useToken();
+
   if (!token) {
     return <Login setToken={setToken} />
   }
