@@ -1,30 +1,24 @@
-import Counts from './Counts';
-import Testimonial from './Testimonial';
+import React from "react";
 
-function AboutPage() {
+const Products = () => {
     return (
         <>
+            <h3>Products</h3>
             {/* ======= Breadcrumbs ======= */}
-            <div className="breadcrumbs" data-aos="fade-in">
+            <div className="breadcrumbs">
                 <div className="container">
-                    <h2>Lipila: Empowering Payment Simplicity</h2>
+                    <h4>The Lipila Payment Platform</h4>
                     <p>
-                        Making financial management smooth and accessible for individuals and businesses in Zambia.
+                        Lipila is the easiest way to manage your fee collections, payments, and
+                        disbursements, all on one Platform.
                     </p>
                 </div>
             </div>
             {/* End Breadcrumbs */}
-            {/* ======= About Section ======= */}
-            <section id="about" className="about">
+            {/* ======= Products Section ======= */}
+            <section id="products" className="products">
                 <div className="container" data-aos="fade-up">
                     <div className="row">
-                        {/* <div
-                            className="col-lg-6 order-1 order-lg-2"
-                            data-aos="fade-left"
-                            data-aos-delay={100}
-                        >
-                            <img src="assets/img/about.jpg" className="img-fluid" alt="" />
-                        </div> */}
                         <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
                             <h3>
                                 Collections
@@ -85,10 +79,43 @@ function AboutPage() {
                         </div>
                     </div>
                 </div>
+
+                <div className="container" data-aos="fade-up">
+                    <div className="row" data-aos="zoom-in" data-aos-delay={100}>
+                        <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div className="product-item">
+                                <div className="product-content">
+                                    <h3>
+                                        <a href="product-details.html">Collections</a>
+                                    </h3>
+                                    <p>
+                                        Et architecto provident deleniti facere repellat nobis iste. Id
+                                        facere quia quae dolores dolorem tempore.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>{" "}
+                        {/* End Product Item*/}
+                        <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                            <div className="product-item">
+                                <div className="product-content">
+                                    <h3>
+                                        <a href="product-details.html">Disbursements</a>
+                                    </h3>
+                                    <p>
+                                        Et architecto provident deleniti facere repellat nobis iste. Id
+                                        facere quia quae dolores dolorem tempore.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>{" "}
+                        {/* End Product Item*/}
+                    </div>
+                </div>
             </section>
-            {/* End About Section */}
+            {/* End Products Section */}
         </>
-    );
+    )
 }
 
-export default AboutPage;
+export default Products;

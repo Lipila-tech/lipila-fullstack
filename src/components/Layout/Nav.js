@@ -1,16 +1,17 @@
 import { Outlet, Link } from "react-router-dom";
+import myLogo from "../../images/logo.png"
 
 const Nav = () => {
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a className="navbar-brand" href="/">Lipila
-                    {/* <img
-                        src="/logo.png"
+                <a className="navbar-brand" href="/">
+                     <img
+                        src={myLogo}
                         width={100}
                         height={20}
-                        alt="Lipila logo"
-                    /> */}
+                        alt="Lipila"
+                    />
                 </a>
                 <button
                     className="navbar-toggler collapsed"

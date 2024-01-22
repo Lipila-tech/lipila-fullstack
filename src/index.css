@@ -107,6 +107,8 @@ p {
     color: #800;
 }
 
+
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -186,6 +188,10 @@ p {
     background: url("../public/black-lady-texting-her-phone-park.jpg") top center;
     background-size: cover;
     position: relative;
+}
+
+#hero a {
+    text-decoration: none;
 }
 
 #hero:before {

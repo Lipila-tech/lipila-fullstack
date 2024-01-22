@@ -1,34 +1,21 @@
-import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
-import AboutPage from './components/pages/info/AboutPage';
-import ContactPage from './components/pages/info/ContactPage';
-import ParentComponent from './components/pages/ParentComponent';
-import HomePage from "./components/pages/info/HomePage";
-import Layout from "./components/pages/Layout";
-import LoginForm from "./components/auth/Login";
-import RegistrationForm from "./components/auth/Register";
-import Products from "./components/pages/Products";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Layout from "./components/Layout/Layout";
+import HomePage from "./components/HomePage";
+import LoginForm from "./components/Auth/Login";
+import RegistrationForm from "./components/Auth/Register";
+
+import AboutPage from "./components/About/AboutPage"
+import ContactPage from './components/About/ContactPage';
+
+import ParentComponent from './components/Payment/ParentComponent';
+import Products from "./components/Products/Products";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Preferences from "./components/Preferences/Preferences";
+
 
 function App() {
   return (
-    // <HashRouter base="/">
-    //   {/* <Routes>
-    //     <Route path="/" component={Nav}>
-    //       <Route path="/about" component={AboutPage} />
-    //       <Route path="/contact" component={ContactPage} />
-    //       <Route path="/" component={ParentComponent} />
-    //       <Route path="/lipila" component={PersonList}></Route>
-    //     </Route>
-    //   </Routes> */}
-    //   {/* <Routes>
-    //     <Route path="/" Component={Nav}>
-    //     <Route path="/about" component={AboutPage} />
-    //     </Route>
-    //   </Routes> */}
-    //   <ParentComponent />
-    //   {/* <AboutPage/>
-    //   <ContactPage/>
-    //   <PersonList/> */}
-    // </HashRouter>
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout/>}>
@@ -39,6 +26,8 @@ function App() {
         <Route path="/login" element={<LoginForm/>} />
         <Route path="/register" element={<RegistrationForm/>} />
         <Route path="/products" element={<Products/>} />
+        <Route path="/dashboard" element={<Dashboard/>} />
+        <Route path="/preferences" element={<Preferences/>} />
       </Route>
     </Routes>
   </BrowserRouter>

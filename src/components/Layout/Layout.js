@@ -1,5 +1,5 @@
-import Nav from "../layout/Nav";
-import Footer from "../layout/Footer";
+import Nav from "./Nav";
+import Footer from "./Footer";
 
 const Layout = () => {
     return (
