@@ -1,5 +1,6 @@
 import Counts from './Counts';
 import Testimonial from './Testimonial';
+import "./About.css"
 
 function AboutPage() {
     return (
@@ -76,6 +77,8 @@ function FeatureCard({ icon, title, desc }) {
                     </div>
                 </div>
             </div>
+            <Testimonial/>
+            <Counts/>
         </>
     );
 }

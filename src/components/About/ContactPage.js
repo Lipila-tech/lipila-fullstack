@@ -1,4 +1,5 @@
 import React from 'react';
+import "./About.css"
 
 export default function ContactPage() {
     const [name, setName] = React.useState('');

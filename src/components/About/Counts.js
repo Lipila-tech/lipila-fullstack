@@ -1,3 +1,5 @@
+import "./About.css"
+
 function Counts() {
     return (
         <>

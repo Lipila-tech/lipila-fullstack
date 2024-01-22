@@ -1,3 +1,6 @@
+import "./Hero.css";
+
+
 const Hero = () => {
     return (
         <>

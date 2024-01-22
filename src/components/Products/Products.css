@@ -1,0 +1,68 @@
+
+/*--------------------------------------------------------------
+# Products
+--------------------------------------------------------------*/
+.products .product-item {
+    border-radius: 5px;
+    border: 1px solid #eef0ef;
+}
+
+.products .product-content {
+    padding: 15px;
+}
+
+.products .product-content h3 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.products .product-content h3 a {
+    color: #37423b;
+    transition: 0.3s;
+}
+
+.products .product-content h3 a:hover {
+    color: #5fcf80;
+}
+
+.products .product-content p {
+    font-size: 14px;
+    color: #777777;
+}
+
+.products .product-content h4 {
+    font-size: 14px;
+    background: #5fcf80;
+    padding: 7px 14px;
+    color: #fff;
+    margin: 0;
+}
+
+.products .product-content .price {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    color: #37423b;
+}
+
+.products .trainer {
+    padding-top: 15px;
+    border-top: 1px solid #eef0ef;
+}
+
+.products .trainer .trainer-profile img {
+    max-width: 50px;
+    border-radius: 50px;
+}
+
+.products .trainer .trainer-profile span {
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #5a6c60;
+}
+
+.products .trainer .trainer-rank {
+    font-size: 18px;
+    color: #657a6d;
+}
