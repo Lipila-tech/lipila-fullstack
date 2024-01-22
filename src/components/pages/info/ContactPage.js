@@ -16,7 +16,7 @@ export default function ContactPage() {
         // Send data to your server or perform other actions here
     };
     return (
-        <div className='main'>
+        <div className=''>
             <div className='container p-3'>
                 <div className="card px-4">
                     <p className='h8 py-3'>Contact Us</p>
@@ -64,7 +64,7 @@ export default function ContactPage() {
                                 />
                             </div>
                         </div>
-                    </div>
+                    </div><br/>
                     <div className='col-12'>
                         <button type="submit" className="btn btn-primary mb-2">Send</button>
                     </div>

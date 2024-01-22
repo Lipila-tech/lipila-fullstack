@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PaymentForm from './PaymentForm';
 import axios from 'axios';
+import Nav from '../layout/Nav';
 
 
 const ParentComponent = () => {
@@ -46,16 +47,18 @@ const ParentComponent = () => {
   };
 
   return (
-    <div className='main'>
-      <div className='container p-3'>
-        <div className='card px-4'>
-          {/* <PaymentButton onClick={() => setIsFormVisible(true)} /> */}
-          {isFormVisible && (
-            <PaymentForm onSubmit={handleSubmit} />
-          )}
+    <>
+      <div className=''>
+        <div className='container p-3'>
+          <div className='card px-4'>
+            {/* <PaymentButton onClick={() => setIsFormVisible(true)} /> */}
+            {isFormVisible && (
+              <PaymentForm onSubmit={handleSubmit} />
+            )}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 export default ParentComponent;
