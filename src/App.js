@@ -10,16 +10,17 @@ import ContactPage from './components/About/ContactPage';
 
 import ParentComponent from './components/Payment/ParentComponent';
 import Products from "./components/Products/Products";
-import Dashboard from "./components/Dashboard/Dashboard";
-import Preferences from "./components/Preferences/Preferences";
 import useToken from "./components/App/useToken";
 
-function App() {
-  const { token, setToken } = useToken();
+// Dashboard
+import ParentAdmin from "./components/Admin/ParentAdmin";
 
-  if (!token) {
-    return <Login setToken={setToken} />
-  }
+
+function App() {
+  // const { token, setToken } = useToken();
+  // if (!token) {
+  //   return <Login setToken={setToken} />
+  // }
   return (
     <BrowserRouter>
       <Routes>
@@ -31,9 +32,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<RegistrationForm />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/preferences" element={<Preferences />} />
         </Route>
+        <Route path="/dashboard" element={<ParentAdmin />} />
       </Routes>
     </BrowserRouter>
   );
