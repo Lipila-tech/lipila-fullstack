@@ -37,6 +37,10 @@
   h6 {
     font-family: "Nunito", sans-serif;
   }
+
+  .heading-title{
+    padding: 20px;
+  }
   
   /*--------------------------------------------------------------
   # Main

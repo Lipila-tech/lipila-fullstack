@@ -5,7 +5,7 @@ import "./About.css"
 function AboutPage() {
     return (
         <>
-            <h3>About Us</h3>
+            <h3 className='heading-title'>About Us</h3>
             <section id="about" className="about">
                 <FeatureCard />
                 <OurStory />
@@ -86,7 +86,7 @@ function FeatureCard({ icon, title, desc }) {
 function OurStory() {
     return (
         <div>
-            <h4>Our Story</h4>
+            <h4 className='heading-title'>Our Story</h4>
         </div>
     )
 }

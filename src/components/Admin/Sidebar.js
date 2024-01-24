@@ -6,7 +6,7 @@ function Sidebar() {
             <aside id="sidebar" className="sidebar">
                 <ul className="sidebar-nav" id="sidebar-nav">
                     <li className="nav-item">
-                        <a className="nav-link " href="index.html">
+                        <a className="nav-link " href="/dashboard">
                             <i className="bi bi-grid" />
                             <span>Dashboard</span>
                         </a>
@@ -63,9 +63,9 @@ function Sidebar() {
                         >
 
                             <li>
-                                <a href="tables-data.html">
+                                <a href="/account-activity">
                                     <i className="bi bi-circle" />
-                                    <span>Data Tables</span>
+                                    <span>Account Activity</span>
                                 </a>
                             </li>
                         </ul>
@@ -76,21 +76,21 @@ function Sidebar() {
 
                     <li className="nav-heading">Pages</li>
                     <li className="nav-item">
-                        <a className="nav-link collapsed" href="users-profile.html">
+                        <a className="nav-link collapsed" href="/users-profile">
                             <i className="bi bi-person" />
                             <span>Profile</span>
                         </a>
                     </li>
                     {/* End Profile Page Nav */}
                     <li className="nav-item">
-                        <a className="nav-link collapsed" href="pages-faq.html">
+                        <a className="nav-link collapsed" href="/faq">
                             <i className="bi bi-question-circle" />
                             <span>F.A.Q</span>
                         </a>
                     </li>
                     {/* End F.A.Q Page Nav */}
                     <li className="nav-item">
-                        <a className="nav-link collapsed" href="pages-contact.html">
+                        <a className="nav-link collapsed" href="/admin-contact">
                             <i className="bi bi-envelope" />
                             <span>Contact</span>
                         </a>

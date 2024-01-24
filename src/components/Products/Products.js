@@ -4,7 +4,7 @@ import "./Products.css"
 const Products = () => {
     return (
         <>
-            <h3>Products</h3>
+            <h3 className="heading-title">Products</h3>
             {/* ======= Breadcrumbs ======= */}
             <div className="breadcrumbs">
                 <div className="container">

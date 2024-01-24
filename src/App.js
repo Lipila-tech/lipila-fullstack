@@ -11,10 +11,13 @@ import ContactPage from './components/About/ContactPage';
 import ParentComponent from './components/Payment/ParentComponent';
 import Products from "./components/Products/Products";
 import useToken from "./components/App/useToken";
-
+import PageNotFound from "./components/Error/PageNotFound";
 // Dashboard
 import ParentAdmin from "./components/Admin/ParentAdmin";
-
+import UserProfile from "./components/Admin/pages/UserProfile";
+import FAQ from "./components/Admin/pages/PagesFAQ";
+import Contact from "./components/Admin/pages/Contact";
+import AccountActivity from "./components/Admin/pages/AccountActivity";
 
 function App() {
   // const { token, setToken } = useToken();
@@ -24,6 +27,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="*" element={<PageNotFound />}></Route>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="/send-money" element={<ParentComponent />} />
@@ -34,6 +38,10 @@ function App() {
           <Route path="/products" element={<Products />} />
         </Route>
         <Route path="/dashboard" element={<ParentAdmin />} />
+        <Route path="/users-profile" element={<UserProfile />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/admin-contact" element={<Contact />} />
+        <Route path="/account-activity" element={<AccountActivity />}></Route>
       </Routes>
     </BrowserRouter>
   );
